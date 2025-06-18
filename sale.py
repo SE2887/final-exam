@@ -4,7 +4,7 @@ import plotly.express as px
 
 def get_dataframe_from_excel():
 	# skiprows=1表示跳过Excel中的第一行，因为第一行是标题
-	df = pd.read_excel('D:\\streamlit_env\\supermarket_sales.xlsx',sheet_name='销售数据',skiprows=1,index_col='订单号')
+	df = pd.read_excel('supermarket_sales.xlsx',sheet_name='销售数据',skiprows=1,index_col='订单号')
 
 	#pd.to_datatime将'时间'列转换成datetime  
 	#format="%H:%M:%S"指定了原有时间字符串的格式
